@@ -7,7 +7,7 @@ def print_a_line():
     print("--------------------")
 
 
-def print_a_message(msg, symbol):
+def print_a_message(msg, symbol, topLine=False, botLine=False):
     """
     This function displays a given text message enclosed in a pair of the specified symbols.
     For example, if msg is "Welcome" and symbol is "#", then the function displays "# Welcome #".
@@ -16,16 +16,16 @@ def print_a_message(msg, symbol):
       - msg: A string that represents the text message to be displayed.
       - symbol: A single character that is used to enclose the text message.
     """
+    if topLine:
+        print_a_line()
     print(symbol + " " + msg + " " + symbol)
+    if botLine:
+        print_a_line()
 
 
-# ################################################################################    
+# ################################################################################
 # Write your code below:
 
-print_a_line()
-print_a_message("Hello SIS!", "|")
-print_a_line()
-print_a_line()
-print_a_message("Hello Python!", "*")
-print_a_message("Hello Functions!", "$")
-print_a_line()
+print_a_message("Hello SIS!", "|", True, True)
+print_a_message("Hello Python!", "*", True, False)
+print_a_message("Hello Functions!", "$", False, True)
