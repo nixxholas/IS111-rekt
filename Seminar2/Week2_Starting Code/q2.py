@@ -5,7 +5,8 @@ def print_a_line():
     This function displays a line of 20 dashes.
     """
     print("--------------------")
-    
+
+
 def print_a_message(msg, symbol):
     """
     This function displays a given text message enclosed in a pair of the specified symbols.
@@ -16,6 +17,10 @@ def print_a_message(msg, symbol):
       - symbol: A single character that is used to enclose the text message.
     """
     print(symbol + " " + msg + " " + symbol)
-    
+    print_a_line()
+
+
 # ################################################################################    
 # Write your code below:
+
+print_a_message(input("Enter your message of choice: "), input("Enter a symbol of choice: "))
