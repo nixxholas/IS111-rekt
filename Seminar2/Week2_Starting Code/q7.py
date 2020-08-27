@@ -14,19 +14,19 @@ num_seconds = 0
 
 # Put your code below
 
-while (input_str >= 86400):
+while input_str >= 86400:
     input_str -= 86400
     num_days += 1
 
-while (input_str >= 3600):
+while input_str >= 3600:
     input_str -= 3600
     num_hours += 1
 
-while (input_str >= 60):
+while input_str >= 60:
     input_str -= 60
     num_minutes += 1
 
-while (input_str > 0):
+while input_str > 0:
     num_seconds = input_str
     input_str = 0
 
