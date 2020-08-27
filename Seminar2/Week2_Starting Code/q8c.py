@@ -4,10 +4,20 @@ def calculate_tax_3(income):
     """
     This function assumes that the income is between $0 and $40,000.
     """
-    
-    # Modify the code below to return the right amount of tax.
-    
-    return 0
+    # If u ain't earning, get lost or if u earning beyond 40k
+    if income <= 0:
+        return Exception("Don't be broke.")
+
+    # 20k <
+    if income <= 20000:
+        return 0
+
+    # 20 - 30k
+    if income <= 30000:
+        return (income - 20000) * 0.02
+
+    # Since the last bit are for 40k and below,
+    return 200 + ((income - 30000) * 0.035)
 
 # ################################################################################
 
