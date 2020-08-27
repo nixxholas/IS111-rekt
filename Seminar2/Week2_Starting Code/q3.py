@@ -12,16 +12,18 @@ def print_a_customized_line(symbol, n):
     for i in range(n):
         print(symbol, end='')
     print()
+
+
 # ################################################################################
-    
 
 # ################################################################################
 # This function is for you to implement!
 def print_signage(msg, symbol):
-    pass
     # Write your code below to print out the correct output.
-    
-   
+    propMsg = symbol + " " + msg + " " + symbol
+    print_a_customized_line(symbol, len(propMsg))
+    print(propMsg)
+    print_a_customized_line(symbol, len(propMsg))
 
 
 # ################################################################################
