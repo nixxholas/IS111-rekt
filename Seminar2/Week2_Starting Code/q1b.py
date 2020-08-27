@@ -12,4 +12,9 @@ def compute_geometric_mean(x, y, z):
 # The code below is to test your implementation above.
 # DO NOT MODIFY THE CODE BELOW!
 
-print("The geometric mean of 2, 4 and 6 is:", compute_geometric_mean(2, 4, 6))
+firstNo = int(input("Enter your first number: "))
+secondNo = int(input("Enter your second number: "))
+thirdNo = int(input("Enter your third number: "))
+
+print("The geometric mean of", firstNo, ",", secondNo, "and", thirdNo, "is:",
+      compute_geometric_mean(firstNo, secondNo, thirdNo))
