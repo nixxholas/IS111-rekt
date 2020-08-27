@@ -17,10 +17,15 @@ def print_a_message(msg, symbol):
       - symbol: A single character that is used to enclose the text message.
     """
     print(symbol + " " + msg + " " + symbol)
-    print_a_line()
 
 
 # ################################################################################    
 # Write your code below:
 
-print_a_message(input("Enter your message of choice: "), input("Enter a symbol of choice: "))
+print_a_line()
+print_a_message("Hello SIS!", "|")
+print_a_line()
+print_a_line()
+print_a_message("Hello Python!", "*")
+print_a_message("Hello Functions!", "$")
+print_a_line()
