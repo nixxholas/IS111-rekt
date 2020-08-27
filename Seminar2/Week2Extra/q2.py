@@ -28,6 +28,11 @@ def print_square_v2(symbol, size, currLine = 0):
         currLine += 1
         print_square_v2(symbol, size, currLine)
 
+# Actual answer lol wow...
+def print_square_v3(symbol, size):
+    print(symbol * size)
+    print((symbol + ' ' * (size - 2) + symbol + '\n') * (size - 2), end='')
+    print(symbol * size)
 
 # print_square(input("Enter the symbol of the square: "), int(input("Enter the size of the square: ")))
 print_square_v2(input("Enter the symbol of the square: "), int(input("Enter the size of the square: ")))
