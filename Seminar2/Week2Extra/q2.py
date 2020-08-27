@@ -1,9 +1,9 @@
 # Loop method
 def print_square(symbol, size):
-    '''
+    """
     In Python, a string can be “multiplied by” an integer, which gives a new string that repeats the original string
     multiple times. Try the following code to understand how this works:
-    '''
+    """
     currLine = 0
 
     # While current line does not exceed the size
