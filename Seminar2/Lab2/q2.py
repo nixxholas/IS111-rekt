@@ -29,10 +29,10 @@ help(display_numbers)
 # when you uncomment the given function with the values 3 and 5.
 # ##########################################################
 
-#display_numbers(3, 5)
+display_numbers(3, 5)
 
 ############################################################
 # Write your codes below to print the expected output.
 
-
-
+display_numbers(0, 10)
+display_numbers(5, 9)
