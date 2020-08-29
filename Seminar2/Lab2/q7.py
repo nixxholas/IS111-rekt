@@ -15,8 +15,7 @@ def q7_1(str1, str2, str3):
     then this function should return "AB".
     """
     # Modify the code below to return a correct string.
-    
-    return ""
+    return lab_2_util.get_common_characters(lab_2_util.get_common_characters(str1, str2), str3)
     
     
 def q7_2(str1, str2, str3):
