@@ -16,8 +16,9 @@ def print_square(symbol, size):
 
         currLine += 1
 
+
 # Recursion method
-def print_square_v2(symbol, size, currLine = 0):
+def print_square_v2(symbol, size, currLine=0):
     if currLine < size:
         # If we're at the first line or last line
         if (currLine == 0) or ((currLine + 1) == size):
@@ -28,11 +29,13 @@ def print_square_v2(symbol, size, currLine = 0):
         currLine += 1
         print_square_v2(symbol, size, currLine)
 
+
 # Actual answer lol wow...
 def print_square_v3(symbol, size):
     print(symbol * size)
     print((symbol + ' ' * (size - 2) + symbol + '\n') * (size - 2), end='')
     print(symbol * size)
+
 
 # print_square(input("Enter the symbol of the square: "), int(input("Enter the size of the square: ")))
 print_square_v2(input("Enter the symbol of the square: "), int(input("Enter the size of the square: ")))
