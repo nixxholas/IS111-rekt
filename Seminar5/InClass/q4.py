@@ -16,6 +16,13 @@ def concatenate_emails(strings):
     return email_str[:-1]
 
 
+def check_hashtags(strings):
+    if len(strings) <= 0: return False
+    for i in strings:
+        if i != '' and (i[0] != '#' or ' ' in i): return False
+    return True
+
+
 print(get_avg_len(["C", "Java", "Python", "PHP"]))
 print(get_avg_len([]))
 
@@ -30,3 +37,8 @@ print(concatenate_emails(my_list2))
 my_list3 = ["IS111", "a @ b", "jerry.lee@sis.smu.edu.sg", "@@@", "alan_wong@gmail.com", "Python",
             "george_tan@yahoo.com"]
 print(concatenate_emails(my_list3))
+
+print(check_hashtags(["","#singapore", "#music", "#travel"]))
+print(check_hashtags([]))
+print(check_hashtags(["#singapore", "#music album", "#travel"]))
+print(check_hashtags(["singapore", "#music", "#travel"]))
