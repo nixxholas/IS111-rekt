@@ -16,4 +16,4 @@ def calculate_total_amount(brand, num_boxes):
 
 
 print("You need to pay $" + str(calculate_total_amount(input("Which brand do you want to buy? "),
-                       int(input("How many boxes do you want to buy? ")))))
+                                                       int(input("How many boxes do you want to buy? ")))))
