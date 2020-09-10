@@ -13,7 +13,8 @@ print('*****************')
 
 # ################################################################################
 # Write your code here:
-
+print("Jackpot!" if (num1 == num2 == num3) else "Two of a kind!" if (num1 == num2 or num1 == num3 or num2 == num3) else
+      "Try again")
 
 
 
