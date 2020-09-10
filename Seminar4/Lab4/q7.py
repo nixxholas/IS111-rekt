@@ -28,7 +28,10 @@ def count_an(text):
     word “an” occurs, its previous character and its next character are both a space.
     """
     # Modify the code below to return the number of "an" occurrences.
+    count = 0
+    for i in range(1, len(text)):
+        if (i - 2 >= 0) and (i + 1 < len(text)) and ((text[i - 1] + text[i]) == 'an') and (text[i - 2] == ' ') \
+                and (text[i + 1] == ' '):
+            count += 1
 
-
-
-    return 0
+    return count
