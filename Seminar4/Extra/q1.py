@@ -38,6 +38,7 @@ def print_square_1(n):  # n is a +ve odd number >= 5
                 else:
                     print("*", end='')
         else:
+            # print("*" * n) TODO: Overhaul flow with this
             for i in range(0, n):
                 if i == 0 or i == mid:
                     print("*", end='')
