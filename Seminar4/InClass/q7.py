@@ -1,5 +1,5 @@
 def is_palindrome(txt):
-    for i in range(0, len(txt)):
+    for i in range(0, len(txt) // 2):
         if txt[i] != txt[len(txt) - (i + 1)]: return False
     return True
 
