@@ -11,10 +11,12 @@ def count_a(text):
     word “a” occurs, both its previous character and its next character are a space.
     """
     # Modify the code below to return the number of "a" occurrences.
+    count = 0
+    for i in range(0, len(text)):
+        if (i - 1 >= 0) and (i + 1 < len(text)) and (text[i] == 'a') and (text[i - 1] == ' ') and (text[i + 1] == ' '):
+            count += 1
 
-
-
-    return 0
+    return count
 # ################################################################################
 # Q7b 
 def count_an(text):
