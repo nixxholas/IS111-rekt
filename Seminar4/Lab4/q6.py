@@ -33,7 +33,9 @@ for i in range(1, item_count + 1):
 
 total = 0.0
 for i in items:
-    total += calculate_price_after_discount(i[1], i[2], discount)
+    total += (calculate_price_after_discount(i[1], i[2], i[4]) if i[3] is True else (i[1] * i[2]))
+
+print("The total amount you have to pay is $" + str(round(total, 2)))
 
 ######################################################################################
 # Write your solution below for Part B:
