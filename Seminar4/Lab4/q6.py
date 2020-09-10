@@ -39,3 +39,29 @@ print("The total amount you have to pay is $" + str(round(total, 2)))
 
 ######################################################################################
 # Write your solution below for Part B:
+
+item_count = int(input("How many items do you want to check out? "))
+items = []
+
+for i in range(1, item_count + 1):
+    print("Enter the details of Item " + str(i) + ":")
+    name = input("What's this item? ")
+    unit_price = float(input("'What's the unit price of this item? "))
+    qty = int(input("What's the quantity of this item? "))
+    has_discount = input("Does this item have any discount? [yes|no]") == "yes"
+    discount = 0.0
+    if has_discount: discount = float(input("What's the percentage of discount (%)? "))
+    items.append((name, unit_price, qty, has_discount, discount))
+
+total = 0.0
+savings = 0.0
+for i in items:
+    if i[3] is True:
+        subtotal = calculate_price_after_discount(i[1], i[2], i[4])
+        savings += ((i[1] * i[2]) - subtotal)
+        total += subtotal
+    else:
+        total += i[1] * i[2]
+
+print("The total amount you have to pay is $" + str(round(total, 2)))
+print("You have saved $" + str(round(savings, 2)))
