@@ -38,5 +38,5 @@ if has_location_surcharge:
     location_surcharge = float(input("What's the amount of location surcharge? $"))
 
 meter_fare = get_meter_fare(distance, flag_down_fare, rate_per_400_within_9_8km, rate_per_35_beyond_9_8km)
-print("The total fare is $" + str(meter_fare + get_surcharges(has_location_surcharge, is_peak, is_midnight, meter_fare,
-                                                              location_surcharge)))
+print("The total fare is $" + str(round(meter_fare + get_surcharges(has_location_surcharge, is_peak, is_midnight,
+                                                                    meter_fare, location_surcharge), 2)))
