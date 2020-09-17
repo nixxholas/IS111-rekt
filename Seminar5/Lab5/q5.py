@@ -15,10 +15,14 @@ TAX_INFO = [
 
 # Write your code below:
 ##############################################################
-
-
-
-
+def calculate_tax(income):
+    for i in range(len(TAX_INFO) - 1, 0, -1):
+        curr_range = TAX_INFO[i]
+        # if the highest current range is less than the income
+        if curr_range[0] <= income:
+            # Tax this rich ass
+            return curr_range[1] + ((income - curr_range[0]) * curr_range[2])
+    return 0
 
 
 ##############################################################
