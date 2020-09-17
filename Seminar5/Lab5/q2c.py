@@ -2,12 +2,13 @@
 ## c)
 # Write your code below:
 ##############################################################
+def get_sum_multiples(int_list, n):
+    sum = 0
+    while len(int_list) > 0:
+        curr = int_list.pop()
+        if curr % n == 0: sum += curr
 
-
-
-
-
-
+    return sum
 
 
 ##############################################################
