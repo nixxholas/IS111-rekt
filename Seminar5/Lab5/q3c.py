@@ -2,11 +2,11 @@
 ## c)
 # Write your code below:
 ##############################################################
+def get_items_more_expensive_than(item_list, min_price):
+    for i in item_list:
+        if i[1] < min_price: item_list.remove(i)
 
-
-
-
-
+    return item_list
 
 
 
