@@ -4,10 +4,12 @@ COMMON_WORDS = ['a', 'aa', 'ab', 'abc', 'ability', 'able', 'about', 'above', 'ab
 
 # Write your code below:
 ##############################################################
-
-
-
-
+def check_spelling(sentence):
+    words = sentence.split(' ')
+    misspells = []
+    for w in words:
+        if w.lower() not in COMMON_WORDS: misspells.append(w)
+    return misspells
 
 
 ##############################################################
