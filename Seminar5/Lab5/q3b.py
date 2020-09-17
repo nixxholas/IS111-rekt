@@ -2,14 +2,13 @@
 ## b)
 # Write your code below:
 ##############################################################
+def get_items(item_list):
+    item_str_list = []
 
+    for i in item_list:
+        item_str_list.append(i[0])
 
-
-
-
-
-
-
+    return item_str_list
 
 
 ##############################################################
