@@ -2,10 +2,11 @@
 ## a)
 # Write your code below:
 ##############################################################
-
-
-
-
+def calculate_total_price(item_list):
+    total = 0.0
+    for t in item_list:
+        total += (t[1] * t[2])
+    return total
 
 
 ##############################################################
