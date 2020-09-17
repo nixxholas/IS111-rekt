@@ -2,12 +2,17 @@
 ## b)
 # Write your code below:
 ##############################################################
+def all_older_than(age_list, n):
+    """
+    The function takes two parameters: (1) A list of integers called age_list,
+    where each element indicates the age of a person.
+    (2) An integer called n, which is a threshold.
 
+    The function returns True if ALL the age values in age_list are larger than n, and False otherwise.
+    """
 
-
-
-
-
+    return True if len(age_list) == 0 else False if age_list[(len(age_list) - 1)] <= n \
+        else all_older_than(age_list[:-1], n)
 
 
 ##############################################################
