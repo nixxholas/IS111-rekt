@@ -2,12 +2,16 @@
 ## b)
 # Write your code below:
 ##############################################################
+def get_larger_numbers(num_list1, num_list2):
+    for n in num_list1:
+        is_big = True  # Always assume n is bigger
+        for n2_num in num_list2:
+            if n < n2_num:
+                is_big = False  # Not bigger, mark for removal
+                break
+        if not is_big: num_list1.remove(n)
 
-
-
-
-
-
+    return num_list1
 
 
 ##############################################################
