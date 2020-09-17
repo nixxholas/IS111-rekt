@@ -2,12 +2,22 @@
 ## d)
 # Write your code below:
 ##############################################################
+def get_prime_numbers(num_list, sep):
+    res = ''
+    while len(num_list) > 0:
+        num = num_list.pop(0)
+        if is_prime(num):
+            res += str(num) + sep
+    return res[:-1]
 
 
-
-
-
-
+def is_prime(num):
+    if num > 1:
+        # check for factors
+        for i in range(2, num):
+            if (num % i) == 0: return False
+        return True
+    return False
 
 ##############################################################
 # Test Cases to test your code
