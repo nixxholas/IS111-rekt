@@ -1,5 +1,5 @@
-# Name    : Nicholas Chen Han Wei
-# Email ID: hwchen.2020@sis.smu.edu.sg
+# Name    :
+# Email ID:
 
 # start of answer
 def get_longest_word(first, second, third):
