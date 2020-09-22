@@ -4,7 +4,20 @@
 # start of answer
 
 def reverse_num(number):
-    return None # added so that this script will run. feel free to modify it
+    n_list = list(str(number))
+    is_negative = n_list[0] == '-'
+
+    # If its negative,
+    if is_negative:
+        # Remove the '-'
+        n_list.pop(0)
+
+    # Remove trailing zeros
+    if len(n_list) > 1:
+        while n_list[len(n_list) - 1] == '0':
+            n_list.pop()
+
+    return int(("-" + "".join(n_list[::-1])) if is_negative else "".join(n_list[::-1]))
 
 # end of answer
 
