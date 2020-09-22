@@ -1,12 +1,15 @@
 #
-# Name: 
-# Email ID: 
+# Name: Nicholas Chen Han Wei
+# Email ID: hwchen.2020@sis.smu.edu.sg
 #
-def represent_numbers (start, end):
+def represent_numbers(start, end):
     # write your answer between #startcode and #endcode
-    #startcode
-    return ''
-    #endcode
+    res = ''
+
+    for n in range(start, end + 1):
+        res += ("-" * abs(n)) + "#"
+
+    return res[:-1]
 
 
 print('Test 1')
