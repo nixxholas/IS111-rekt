@@ -4,7 +4,24 @@
 # start of answer
 
 def find_tags(sentence):
-    return None # added so that this script will run. feel free to modify it
+    s_chars = list(sentence)
+    tagged_words = []
+
+    while len(s_chars) > 0:
+        c = s_chars.pop(0)
+
+        if c == '[':
+            cur_word = ''
+            while s_chars[0] != ']':
+                cur_word += s_chars.pop(0)
+            s_chars.pop(0)
+            tagged_words.append(cur_word)
+
+    res = ''
+    for i in range(0, len(tagged_words)):
+        res += str(i + 1) + '-' + tagged_words[i] + ','
+
+    return res[:-1]
 
 # end of answer
 
