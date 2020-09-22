@@ -3,7 +3,9 @@
 
 # start of answer
 def get_longest_word(first, second, third):
-    return None # added so that this script will run. feel free to modify it
+    return first if (len(first) > len(second) and len(first) > len(third)) else second if (
+            len(second) > len(first) and len(second) > len(third)) else third if (
+            len(third) > len(second) and len(third) > len(first)) else None
 
 # end of answer
 
