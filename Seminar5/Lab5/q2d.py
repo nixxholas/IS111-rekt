@@ -6,8 +6,7 @@ def get_prime_numbers(num_list, sep):
     res = ''
     while len(num_list) > 0:
         num = num_list.pop(0)
-        if is_prime(num):
-            res += str(num) + sep
+        if is_prime(num): res += str(num) + sep
     return res[:-1]
 
 
@@ -18,6 +17,7 @@ def is_prime(num):
             if (num % i) == 0: return False
         return True
     return False
+
 
 ##############################################################
 # Test Cases to test your code
