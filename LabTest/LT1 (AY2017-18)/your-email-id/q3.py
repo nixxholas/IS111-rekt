@@ -1,5 +1,5 @@
-# Name    :
-# Email ID:
+# Name    : Nicholas Chen Han Wei
+# Email ID: hwchen.2020@sis.smu.edu.sg
 
 # start of answer
 
