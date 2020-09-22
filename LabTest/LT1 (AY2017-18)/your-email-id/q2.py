@@ -3,10 +3,25 @@
 
 
 # start of answer
-def generate_digits(sentence):
-    return None # added so that this script will run. feel free to modify it
-# end of answer
+import string
 
+def generate_digits(sentence):
+    s_chars = list(sentence)
+    digits_letters = ['', '', 'ABC', 'DEF', 'GHI', 'JKL', 'MNO', 'PQRS', 'TUV', 'WXYZ']
+    res = ''
+
+    while len(s_chars) > 0:
+        if len(s_chars) > 0:
+            c = s_chars.pop(0)
+
+            # If compliant
+            if c in string.ascii_uppercase:
+                for e in digits_letters:
+                    if c in e:
+                        res += str(digits_letters.index(e))
+
+    return res  # added so that this script will run. feel free to modify it
+# end of answer
 
 
 print('Test 1: Check if the return value is a str object')
