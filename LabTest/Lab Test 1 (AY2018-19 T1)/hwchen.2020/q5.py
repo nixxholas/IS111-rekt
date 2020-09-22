@@ -5,22 +5,25 @@
 def expand(text):
     # write your answer between #start and #end
     indexer = []  # Stores the characters in 'index-reference'
-    result = []
+    result = []  # The resultant string but in array format. Hi Nic => [ 'H', 'i', ' ', ...]
 
-    t_arr = list(text)
-    # Build the result first.
+    t_arr = list(text)  # Define the text var as an array/list.
+    # Build the indexer first.
     while len(t_arr) > 0:
-        # Obtain the current character.
+        # POP the first character in t_arr.
         c = t_arr.pop(0)
 
+        # If the current character is equal to ampersand (&), it means that we have found an index-reference.
         if c == '&':
-            # Since we've found an index reference, also account for numbers more than a digit.
+            # Since we've found an index reference, we obtain the range as well.
+            # ALSO account for numbers more than a digit. 5-7, 20-25
             while len(t_arr) > 0 and (t_arr[0].isnumeric() or t_arr[0] == '-'):
                 t_arr.pop(0)
         else:
             indexer.append(c)
 
     text_chars = list(text)
+    # Build the result.
     while len(text_chars) > 0:
         c = text_chars.pop(0)
 
