@@ -1,6 +1,6 @@
 #
 # Name: Nicholas Chen Han Wei
-# Email ID: hwchen.2020@sis.smu.edu.sg
+# Email ID: hwchen.2020
 #
 def mask_out(sentence, banned, substitutes):
     # write your answer between #start and #end

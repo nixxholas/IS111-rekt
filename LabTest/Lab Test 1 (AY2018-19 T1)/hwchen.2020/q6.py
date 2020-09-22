@@ -1,6 +1,6 @@
 #
 # Name: Nicholas Chen Han Wei
-# Email ID: hwchen.2020@sis.smu.edu.sg
+# Email ID: hwchen.2020
 #
 def print_snake(sequence, w):
     # the “tail” of the snake is always at the bottom right corner of the output, and
