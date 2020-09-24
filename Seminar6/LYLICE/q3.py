@@ -7,7 +7,8 @@ def print_expanded(n):
 
     for i in range(0, len(digits)):
         if int(digits[i]) > 0:
-            res += (str(digits[i]) if (len(digits) - 1) == i else str(digits[i]) + ('0' * (len(digits) - (1 + i))) + ' + ')
+            res += (str(digits[i]) if (len(digits) - 1) == i else str(digits[i]) +
+                                                                  ('0' * (len(digits) - (1 + i))) + ' + ')
     print(res)
 
 
