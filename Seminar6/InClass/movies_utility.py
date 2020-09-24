@@ -25,3 +25,12 @@ def get_title_of_longest_movie(movie_list):
             longest = m
 
     return longest[0]
+
+
+def get_movies_with_keyword(movie_list, keyword):
+    movies = []
+
+    for m in movie_list:
+        if keyword in m[0]: movies.append(m)
+
+    return movies
