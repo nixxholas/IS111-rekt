@@ -3,8 +3,11 @@ def check_numbers(list1, list2):
     for i in list1:
         i_divisible = False
         for j in list2:
-            if i % j == 0: i_divisible = True
-        divisible = i_divisible
+            if i % j == 0:
+                i_divisible = True
+                break
+
+        if not i_divisible: return i_divisible
 
     return divisible
 

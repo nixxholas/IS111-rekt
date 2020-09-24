@@ -11,6 +11,7 @@ def get_average_duration(movie_list):
 def get_num_movies_of_genre(movie_list, genre):
     count = 0
 
+    # Title, Genre, Duration
     for m in movie_list:
         if m[1] == genre: count += 1
 
@@ -18,11 +19,12 @@ def get_num_movies_of_genre(movie_list, genre):
 
 
 def get_title_of_longest_movie(movie_list):
-    longest = None
+    if len(movie_list) == 0: return ""
+    longest = movie_list[0]
 
-    for m in movie_list:
-        if longest is None or longest[2] < m[2]:
-            longest = m
+    for i in range(1, len(movie_list)):
+        if longest[2] < movie_list[i][2]:
+            longest = movie_list[i]
 
     return longest[0]
 
