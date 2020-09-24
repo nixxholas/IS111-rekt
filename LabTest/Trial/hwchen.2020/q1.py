@@ -1,5 +1,5 @@
 # =====
-# q1.py
+# q1a.py
 # =====
 # Name: Nicholas Chen Han Wei
 # Email ID: hwchen.2020
