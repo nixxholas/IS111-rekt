@@ -47,7 +47,6 @@ def print_triangle(sentence):
 
 # end of answer
 
-
 print('Test 1')
 print('Expected output:')
 print('   a')
@@ -102,4 +101,3 @@ print('Expected return value:True')
 print('Actual output:')
 result = print_triangle('abcd')
 print('Actual return value  :' + str(result))
-print()
