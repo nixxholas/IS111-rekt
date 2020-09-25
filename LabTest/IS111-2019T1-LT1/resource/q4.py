@@ -1,11 +1,47 @@
-# Name:
-# Email ID:
+# Name: Nicholas Chen Han Wei
+# Email ID: hwchen.2020
+
+import string
+
 
 def get_similarity_level(string1, string2):
-    return None
-    
+    if string1 == string2: return 'same'
+    if string1.lower() == string2.lower(): return 'close'
+    str1nums, str1chars, str1syms, str2nums, str2chars, str2syms = 0, 0, '', 0, 0, ''
+    smaller_str = list(string1 if len(string1) < len(string2) else string2)
+    bigger_str = list(string1 if len(string1) > len(string2) else string2)
 
-if __name__ == "__main__":       
+    for c in bigger_str:
+        if c in string.ascii_letters:
+            if c in smaller_str:
+                smaller_str.remove(c)
+                str1chars += 1
+                str2chars += 1
+            else:
+                str2chars += 1
+        elif c.isnumeric():
+            if c in smaller_str:
+                smaller_str.remove(c)
+                str1nums += 1
+                str2nums += 1
+            else:
+                str2nums += 1
+        elif c in smaller_str:
+            return 'different'
+        else:
+            str2syms += c
+
+    if str1nums == str2nums and str1chars == str2chars and len(string1) == len(string2) and len(str1syms) > 0 and \
+            len(str2syms) > 0:
+        for c in str1syms:
+            if c in str2syms:
+                return 'different'
+        return 'somewhat'
+
+    return 'different'
+
+
+if __name__ == "__main__":
     print('Test 1')
     print('Expected:same')
     result = get_similarity_level('hello', 'hello')

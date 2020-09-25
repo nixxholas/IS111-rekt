@@ -1,5 +1,5 @@
-# Name:
-# Email ID:
+# Name: Nicholas Chen Han Wei
+# Email ID: hwchen.2020
 
 def print_number_pattern(n, number):
     return None
