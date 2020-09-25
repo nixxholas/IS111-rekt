@@ -1,9 +1,15 @@
-# Name:
-# Email ID:
+# Name: Nicholas Chen Han Wei
+# Email ID: hwchen.2020
 
 def get_common_chars(first, second):
-    return None
-    
+    res = ''
+    sec_chars = list(second)
+    for c in first:
+        if c in sec_chars:
+            res += c
+            sec_chars.remove(c)
+
+    return res
     
 
 if __name__ == "__main__":
