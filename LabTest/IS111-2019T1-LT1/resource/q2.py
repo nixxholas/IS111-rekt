@@ -1,8 +1,19 @@
-# Name:
-# Email ID:
+# Name: Nicholas Chen Han Wei
+# Email ID: hwchen.2020
 
 def conditional_sum(start, end, multiple):
-    return None
+    res_flow = ''
+    res = 0
+
+    if multiple < end:
+        for i in range(start, end + 1):
+            if i % multiple == 0:
+                res_flow += (str(i) + ' + ')
+                res += i
+
+        return res_flow[:-2] + '= ' + str(res)
+
+    return ''
      
 
 if __name__ == "__main__":
