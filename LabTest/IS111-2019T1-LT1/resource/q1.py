@@ -1,8 +1,8 @@
-# Name:
-# Email ID:
+# Name: Nicholas Chen Han Wei
+# Email ID: hwchen.2020
 
 def repeat(word, n):
-    return None
+    return '' if len(word) < 1 else word[0] * n + repeat(word[1:len(word)], n)
     
 
 if __name__ == "__main__":
