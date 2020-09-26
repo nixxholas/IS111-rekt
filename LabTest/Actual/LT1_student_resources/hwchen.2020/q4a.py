@@ -44,18 +44,19 @@ def trace_contacts(patient, history):
         # And if the
         for h in history:
             # If the infected met with someone who's not the patient and if
-            # the day they met was the following day after the infected was infected,
             if (h[0] == possibly_infected[i] and h[1] != patient) or (
                     h[1] == possibly_infected[i] and h[0] != patient) and (
+                    # the day they met was the following day after the infected was infected,
                     h[2] > (infected_trace_list[i] + 1)):
                 # This dude is infected too.
                 another_infected = h[0] if h[0] != possibly_infected[i] else h[1]
+                # Ensure this person is already not in the infected list.
                 if another_infected not in possibly_infected:
+                    # Add in along with the traceable day
                     possibly_infected.append(another_infected)
                     infected_trace_list.append(h[2])
 
         # Always increment after checking
         i += 1
-
 
     return possibly_infected
