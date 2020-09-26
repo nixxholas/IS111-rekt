@@ -27,15 +27,17 @@ def get_similarity_level(string1, string2):
             else:
                 str2nums += 1
         elif c in smaller_str:
-            return 'different'
+            smaller_str.remove(c)
+            str1syms += c
+            str2syms += c
         else:
             str2syms += c
 
-    if str1nums == str2nums and str1chars == str2chars and len(string1) == len(string2) and len(str1syms) > 0 and \
+    if (str1nums == str2nums) and (str1chars == str2chars) and (len(string1) == len(string2)) and len(str1syms) > 0 and \
             len(str2syms) > 0:
         for c in str1syms:
             if c in str2syms:
-                return 'different'
+                return 'weak'
         return 'somewhat'
 
     return 'different'
