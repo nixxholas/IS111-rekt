@@ -1,6 +1,5 @@
-# Name:
-# Email ID:
+# Name: Nicholas Chen Han Wei
+# Email ID: hwchen.2020
 
 def get_tank_volume(width, depth, height):
-    # Replace the code below with your implementation.
-    return None    
+    return int((width * depth * height) / 1000)
