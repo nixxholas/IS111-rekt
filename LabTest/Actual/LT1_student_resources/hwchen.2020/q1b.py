@@ -8,3 +8,4 @@ def is_compatible(patient_group, donor_group):
                            patient_group == 'O' and (
                            donor_group == "O" or donor_group == "AB" or donor_group == "A" or donor_group == "B")) \
         else False
+1
