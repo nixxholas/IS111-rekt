@@ -1,0 +1,53 @@
+{% extends "master.html" %}
+
+{% block menu %} 
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">        
+        <li><a href="/">Gallery</a></li>
+        <li><a href="/grouped-by-orientation">Grouped by Orientation</a></li>
+        <li class="active"><a href="#">Search</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+{% endblock %}
+
+{% block content %} 
+
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title">Search Images</h1>
+            <form class="form-horizontal" id="workshop-form" action="/search" method="POST" >
+            <fieldset>
+            <!-- new file name -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="">Keyword</label>
+			  <div class="col-md-4">
+				<input id="keyword" name="keyword" placeholder="KEYWORD" class="form-control input-md" type="text">
+			  </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for=""></label>
+              <div class="col-md-4">
+                <input type="submit" value="Search" class="btn btn-primary">
+              </div>
+            </div>
+
+            </fieldset>
+        </form>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

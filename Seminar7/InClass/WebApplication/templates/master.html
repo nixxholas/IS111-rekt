@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Cache-directive" content="no-cache" />
+    <meta http-equiv="Pragma-directive" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<style type="text/css">
+		.gallery-title
+				{
+				    font-size: 36px;
+				    color: #42B32F;
+				    text-align: center;
+				    font-weight: 500;
+				    margin-bottom: 70px;
+				}
+				.gallery-title:after {
+				    content: "";
+				    position: absolute;
+				    width: 7.5%;
+				    left: 46.5%;
+				    height: 45px;
+				    border-bottom: 1px solid #5e5e5e;
+				}
+				.gallery_product
+				{
+				    margin-bottom: 30px;
+				}
+				body {
+					    color: white;
+					}
+				.legend 
+				{
+					color: white;
+				}
+	</style>
+</head>
+<body background="{{ url_for('static', filename='background.jpg') }}">
+<div> 
+	  {% block menu %} 
+	  {% endblock %}
+</div>
+<div> 
+	  {% block content %} 
+	  {% endblock %}
+</div>
+
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

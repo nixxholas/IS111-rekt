@@ -1,0 +1,45 @@
+{% extends "master.html" %}
+
+{% block menu %} 
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Gallery</a></li>
+        <li><a href="/grouped-by-orientation">Grouped by Orientation</a></li>
+        <li><a href="/search">Search</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+{% endblock %}
+
+{% block content %} 
+
+<div class="container">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title">Gallery</h1>
+        </div>
+    <table class="table">
+      <thead>
+            <tr>
+              <th>Image</th>
+              <th>Details</th>
+            </tr>
+      </thead>
+      <tbody>
+             {% for (name, dim) in image_details %}
+             
+                <tr>
+                   <th> <img class="img-responsive" src="./static/images/{{name}}"> </th>
+                   <td> Name: {{name}} <br/> <br/> Dimension: {{dim[0]}} &#215; {{dim[1]}} </td>
+                </tr>
+                
+             {% endfor %}   
+      </tbody>
+</table>
+
+</div>
+
+{% endblock %}
