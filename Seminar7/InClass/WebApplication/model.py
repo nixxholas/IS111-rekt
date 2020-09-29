@@ -8,7 +8,7 @@ def get_all_image_details_in_dir(img_dir):
     file_names_list = os.listdir(img_dir)
     for file_name in file_names_list:
         # Only those files that are image files are considered.
-        if(util.is_image_file(file_name)):
+        if util.is_image_file(file_name):
             file_full_path = os.path.join(img_dir, file_name)
             dimension = Image.open(file_full_path).size
             details.append((file_name, dimension))

@@ -1,8 +1,8 @@
 def get_file_extension(file_name):
-    return ''
+    return file_name.split('.')[-1]
 
 def is_image_file(file_name):
-    return  'cat-1' in file_name 
+    return get_file_extension(file_name).lower() in {'png', 'jpg', 'jpeg', 'tiff', 'bmp', 'gif'}
 
 def is_square(dimension):
     return True
