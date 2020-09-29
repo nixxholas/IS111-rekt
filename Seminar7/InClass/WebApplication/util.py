@@ -38,7 +38,12 @@ def get_landscape_image_details(image_details):
     return images
 
 def get_matching_files(file_list, keyword):
-    return []
+    files = []
+
+    for f in file_list:
+        if keyword in f: files.append(f)
+
+    return files
 
 
 
