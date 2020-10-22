@@ -1,0 +1,4 @@
+The Cat in the Hat	Seuss	$7.59
+Green Eggs and Ham	Seuss	$8.83
+One Fish Two Fish Red Fish Blue Fish	Seuss	$7.99
+Yertle the Turtle and Other Stories	Seuss	$10.99
