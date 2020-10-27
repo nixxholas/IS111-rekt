@@ -30,7 +30,7 @@ for line in file:
             back_compliant = back in string.ascii_letters and word_arr[i][-2] != "'"
             # If the back-end characters do not comply,
             if not back_compliant:
-                # Continue iterating backwards to look for all the characters till the last character we need to swap
+                # Continue iterating backwards to look for all the characters till the last character we need to swapz
                 # around with
                 back_iter = len(word_arr[i]) - 2
                 while word_arr[i][back_iter] not in string.ascii_letters:
