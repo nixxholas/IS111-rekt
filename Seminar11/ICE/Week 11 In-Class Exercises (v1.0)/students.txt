@@ -1,0 +1,6 @@
+Wendy Li	wendy.li.2016	12-15-2000	F
+Joe Wong	j.wong.2017	03-09-1998	M
+Ng Yin Hui	ng.yh.2015	09-15-2000	F
+Chua Lee Hong	chua.leehong.2016	09-21-1999	M
+Peter Liu	liu.peter.2017	10-18-1998	M
+Eric Wong	eric.wong.2017	12-15-1999	M

@@ -1,0 +1,5 @@
+SMU	Singapore Management University
+NUS	National University of Singapore
+NTU	National University of Technology
+SUTD	Singapore University of Technology and Design
+SIM	Singapore Intitute of Management
