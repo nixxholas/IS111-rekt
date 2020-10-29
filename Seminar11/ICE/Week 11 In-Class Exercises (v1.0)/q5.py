@@ -12,3 +12,5 @@ if name in contacts:
     print(name + ' has ' + str(len(contacts[name])) + ' number(s):')
     for n in contacts[name]:
         print('\t' + n)
+else:
+    print(name + ' was not found in the database.')
