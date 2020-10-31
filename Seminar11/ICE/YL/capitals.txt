@@ -1,0 +1,65 @@
+Singapore:Singapore
+Thailand:Bangkok
+Indonesia:Jakarta
+Malaysia:Kuala Lumpur
+Philippines:Manila
+Cambodia:Phnom Penh
+Vietnam:Hanoi
+Brunei:Bandar Seri Begawan
+Myanmar:Naypyidaw
+India:New Delhi
+Pakistan:Islamabad
+Bangladesh:Dhaka
+Nepal:Kathmandu
+Sri Lanka:Colombo
+China:Beijing
+Japan:Tokyo
+North Korea:Pyongyang
+South Korea:Seoul
+Iran:Tehran
+Iraq:Baghdad
+Turkey:Ankara
+Maldives:Male
+Greece:Athens
+Spain:Madrid
+Portugal:Lisbon
+Poland:Warsaw
+France:Paris
+Germany:Berlin
+Russia:Moscow
+Norway:Oslo
+Sweden:Stockholm
+Finland:Helsinki
+Belgium:Brussels
+Bulgaria:Sofia
+Denmark:Copenhagen
+Hungary:Budapest
+Netherlands:Amsterdam
+Italy:Rome
+Mexico:Mexico City
+Israel:Jerusalem
+Palestine:Ramallah
+Iceland:Reykjavik
+Switzerland:Bern
+Egypt:Cairo
+Canada:Ottawa
+United States:Washington DC
+Barbados:BridgeTown
+Chile:Santiago
+Brazil:Brasilia
+Argentina:Buenos Aires
+Peru:Lima
+Panama:Panama City
+Guyana:GeorgeTown
+Saudi Arabia:Riyadh
+South Africa:Cape Town
+Syria:Damascus
+Qatar:Doha
+Oman:Muscat
+Libya:Tripoli
+Lebanon:Beirut
+Zimbabwe:Harare
+Zambia:Lusaka
+Nigeria:Abuja
+Australia:Canberra
+New Zealand:Wellington
