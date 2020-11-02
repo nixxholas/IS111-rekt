@@ -1,0 +1,5 @@
+ID:1	name:Jason Wong	title:assistant manager	age:32	phone:94354893	address:Blk 10 #10-09, Jurong East Ave 3, S201425	marriage status:single
+ID:3	name:Peter Ng	title:manager	age:46	marriage status:married	number of dependents:3
+ID:10	name:George Khoo	phone:67893456	address:80 Stamford Road
+ID:19	name:Wendy Li	title:assistant director	age:42	marriage status:married
+ID:23	name:Mary Tan	title:finance executive	phone:95473814
