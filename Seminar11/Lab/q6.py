@@ -26,7 +26,7 @@ while id == -1 or input('Do you want to search for another employee? [Y|N]:') ==
 
             if field in employee:
                 print('\tThe ' + field + ' is ' + str(employee[field]))
-            else:
+            elif field != 'S':
                 print('\tNot found!')
     else:
         print('Not found!')
