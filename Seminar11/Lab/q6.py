@@ -31,3 +31,4 @@ while id == -1 or input('Do you want to search for another employee? [Y|N]:') ==
     else:
         print('Not found!')
     print()
+print('Good-bye!')
