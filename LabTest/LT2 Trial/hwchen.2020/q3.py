@@ -5,7 +5,8 @@ def process_numbers(input_filename, output_filename):
 
     with open(output_filename, 'w') as output_file:
         groups = 0
-        max_avg = 0
+        # Make sure u have an initial never higher than any possible value.
+        max_avg = -float('inf')
         # Loop every line
         for line in incoming_data:
             # Since we're in the line, split the numbers by groups
