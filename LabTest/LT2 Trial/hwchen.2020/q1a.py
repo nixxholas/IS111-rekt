@@ -5,4 +5,3 @@ def find_last_letter(my_str):
         if my_str[i] in string.ascii_letters:
             return i
     return -1
-    
