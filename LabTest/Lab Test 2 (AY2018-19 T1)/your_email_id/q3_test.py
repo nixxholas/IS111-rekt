@@ -1,0 +1,25 @@
+import q3
+
+print('Test 1')
+print('Expected value:320.0')
+result = q3.get_total_transactions_in_month('my_transactions.txt', '04/2015')
+print('Actual value  :' + str(result))
+print("Expected type:<class 'float'>")
+print('Actual type  :' + str(type(result)))
+print()
+
+print('Test 2')
+print('Expected value:15.2')
+result = q3.get_total_transactions_in_month('my_transactions.txt', '9/2016')
+print('Actual value  :' + str(result))
+print("Expected type:<class 'float'>")
+print('Actual type  :' + str(type(result)))
+print()
+
+print('Test 3')
+print('Expected value:0.0')
+result = q3.get_total_transactions_in_month('my_transactions.txt', '01/2017')
+print('Actual value  :' + str(result))
+print("Expected type:<class 'float'>")
+print('Actual type  :' + str(type(result)))
+print()

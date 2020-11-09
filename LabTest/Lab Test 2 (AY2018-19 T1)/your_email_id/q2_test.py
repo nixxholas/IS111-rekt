@@ -1,0 +1,33 @@
+import q2
+
+print('Test 1')
+print('Expected value:[24.49, 10.0]')
+result = q2.get_prices_in_range([249.99, 24.49, 10.0, 100.0], 0.0, 30.0)
+print('Actual value  :' + str(result))
+print("Expected type:<class 'list'>")
+print('Actual type  :' + str(type(result)))
+print()
+
+print('Test 2')
+print('Expected value:[15.0, 10.9, 5.0]')
+result = q2.get_prices_in_range([15.0, 10.9, 5.0], 5.0, 20.0)
+print('Actual value  :' + str(result))
+print("Expected type:<class 'list'>")
+print('Actual type  :' + str(type(result)))
+print()
+
+print('Test 3')
+print('Expected value:[]')
+result = q2.get_prices_in_range([108.9, 354.8], 0.0, 100.0)
+print('Actual value  :' + str(result))
+print("Expected type:<class 'list'>")
+print('Actual type  :' + str(type(result)))
+print()
+
+print('Test 4')
+print('Expected value:[]')
+result = q2.get_prices_in_range([], 0.0, 100.0)
+print('Actual value  :' + str(result))
+print("Expected type:<class 'list'>")
+print('Actual type  :' + str(type(result)))
+print()

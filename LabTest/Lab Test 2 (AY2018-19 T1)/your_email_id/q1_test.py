@@ -1,0 +1,25 @@
+import q1
+
+print('Test 1')
+print('Expected value:3')
+result = q1.count_names_with_space(['George W. Bush', 'George Washington', 'Bill', 'Gates', 'Bill Gates'])
+print('Actual value  :' + str(result))
+print("Expected type:<class 'int'>")
+print('Actual type  :' + str(type(result)))
+print()
+
+print('Test 2')
+print('Expected value:0')
+result = q1.count_names_with_space(['Mark', 'George', 'William'])
+print('Actual value  :' + str(result))
+print("Expected type:<class 'int'>")
+print('Actual type  :' + str(type(result)))
+print()
+
+print('Test 3')
+print('Expected value:0')
+result = q1.count_names_with_space([])
+print('Actual value  :' + str(result))
+print("Expected type:<class 'int'>")
+print('Actual type  :' + str(type(result)))
+print()
