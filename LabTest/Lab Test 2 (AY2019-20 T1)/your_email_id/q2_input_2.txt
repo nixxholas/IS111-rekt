@@ -1,0 +1,6 @@
+Grab&Uber
+McDonald&KFC
+Amazon&Lazada
+tea&coffee
+New York&San Francisco
+&empty string
