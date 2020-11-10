@@ -19,14 +19,14 @@ def get_total_transactions_in_month(trans_file, month):
     dataset = load_file(trans_file)
 
     total = 0.0
-    target_month = int(month.split('/')[0])
-    target_year = int(month.split('/')[1])
-    for datum in dataset:
-        datum_month = int(datum[0].split('/')[0])
-        datum_year = int(datum[0].split('/')[2])
+    target_month = int(month.split('/')[0])  # Get the target month in INT
+    target_year = int(month.split('/')[1])  # Get the target year in INT
+    for datum in dataset:  # Loop every tx
+        datum_month = int(datum[0].split('/')[0])  # Take the tx's MM
+        datum_year = int(datum[0].split('/')[2])  # Take the tx's YYYY
 
-        if datum_month == target_month and datum_year == target_year:
-            total += float(datum[1][1:])
+        if datum_month == target_month and datum_year == target_year:  # Compare.
+            total += float(datum[1][1:])  # Add since its within the target month and year.
 
     return total
 
