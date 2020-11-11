@@ -4,7 +4,7 @@
 def compute_product(num_list):
     product = 1
 
-    for num in num_list: 
+    for num in num_list:
         if num % 2 != 0:
             product *= num
 
