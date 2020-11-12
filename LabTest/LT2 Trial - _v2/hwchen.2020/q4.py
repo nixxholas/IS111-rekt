@@ -18,6 +18,7 @@ def get_document_pair(filename):
     return best_pair
 
 
+# Debugging function for nCr
 def combination(n):
     val = 0
     for i in range(n - 1, 0, -1):
