@@ -1,3 +1,7 @@
 def count_high_temperatures(temperatures):
-    # Modify the code below.
-    return 0
+    res = []
+    for temp in temperatures:
+        if temp > 37.5:
+            res.append(temp)
+
+    return len(res)
