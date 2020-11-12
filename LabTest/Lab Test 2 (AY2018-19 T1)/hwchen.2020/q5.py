@@ -7,7 +7,7 @@ import copy
 
 # If needed, you can define your own additional functions here.
 # Start of your additional functions.
-def str_list_traversal(num_list_str):
+def str_list_traversal(num_list_str, parent=False):
     res = []
 
     cur_val = ''
@@ -19,23 +19,21 @@ def str_list_traversal(num_list_str):
         elif num_list_str[0] == ']':
             if cur_val.isnumeric():
                 res.append(int(cur_val))
-            cur_val = ''
-            num_list_str = num_list_str[1:]
+            cur_val, num_list_str = '', num_list_str[1:]
             return res
         elif num_list_str[0] == ',':
             if cur_val.isnumeric():
                 res.append(int(cur_val))
-            cur_val = ''
-            num_list_str = num_list_str[1:]
+            cur_val, num_list_str = '', num_list_str[1:]
         else:
             cur_val += copy.deepcopy(num_list_str[0])
             num_list_str = num_list_str[1:]
 
-    return res
+    return res[0] if parent else res
 # End of your additional functions.
 
 def convert_to_list(num_list_str):
-    res = str_list_traversal(num_list_str)
+    res = str_list_traversal(num_list_str, True)
 
-    return res[0]
+    return res
 
