@@ -1,5 +1,4 @@
-def get_document_pair(filename):
-    # Modify the code below.
+def get_document_pair(filename):  # Load, iterate, replace
     sub_pairs = []
     with open(filename) as doc:
         for line in doc:
@@ -46,3 +45,4 @@ def combination(n):
     #             pairs[(cur_key[0], key)] = matches
     #         if best_pair is None or best_pair[2] < matches:
     #             best_pair = (cur_key[0], key, matches)
+
