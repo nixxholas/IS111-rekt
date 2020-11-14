@@ -1,0 +1,4 @@
+Jack,100 Market Street,Singapore 100000
+Mary,10 Main Street Apt #23,Singapore 200000
+Joe,10th Street 09-08,Singapore 300000
+Lincoln,2000 Spring Road,Singapore 432100
