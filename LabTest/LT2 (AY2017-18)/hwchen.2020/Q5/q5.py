@@ -1,10 +1,14 @@
 def get_family_members(head):
     res = [head[0]]
 
-    if len(head) > 1:
-        for i in range(len(head[1]) - 1, -1, -1):
-            descendant = head[1][i]
-            res += get_family_members(descendant)
+    cur_layer = head[1]
+    while len(cur_layer) > 0:
+        new_layer = []
+        for cur_layer_head in cur_layer:
+            res.append(cur_layer_head[0])
+            if len(cur_layer_head[1]) > 0:
+                new_layer += cur_layer_head[1]
+        cur_layer = new_layer
 
     return res
 
