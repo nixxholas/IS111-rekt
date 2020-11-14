@@ -1,7 +1,14 @@
 ## Q1
-def max_age(student_dict,gender):
+def max_age(student_dict, gender):
+    res = ('', -1)
 
-    return 0
+    for key in student_dict.keys():
+        val = student_dict[key]
+        if val[0] == gender:
+            if res[1] < val[1]:
+                res = (key, val[1])
+
+    return None if res[1] == -1 else res
         
 # DO NOT MODIFY THE CODE BELOW!
 if __name__ == "__main__":
