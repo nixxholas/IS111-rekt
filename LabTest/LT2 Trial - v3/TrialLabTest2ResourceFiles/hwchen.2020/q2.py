@@ -1,7 +1,20 @@
 ## Q1
 def reverse_segments(text):
-            
-    return None
+    segments = []
+
+    cur_text = ''
+    for c in text:
+        if c not in '|-=':
+            cur_text += c
+        else:
+            segments.append(cur_text[::-1])
+            segments.append(c)
+            cur_text = ''
+
+    if cur_text != '':
+        segments.append(cur_text[::-1])
+
+    return segments
         
 # DO NOT MODIFY THE CODE BELOW!
 if __name__ == "__main__":
