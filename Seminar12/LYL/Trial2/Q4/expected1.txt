@@ -1,0 +1,4 @@
+4: 20.0#250.0#-10.0#2.0
+3: 2000.0#40.0#5.0
+Total number of groups: 7
+Maximum average: 2000.0

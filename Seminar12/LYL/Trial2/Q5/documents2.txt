@@ -1,0 +1,8 @@
+D01	apple orange pear
+D02	apple apple orange orange pear pear
+D03	durian banana mango
+D04	mango durian mango durian banana banana strawberry
+D05	chiku chiku guava guava orange orange orange grape
+D06	grape grape grape orange guava orange
+D07	rambutan lychee
+D08	peach peach peach lychee lychee
