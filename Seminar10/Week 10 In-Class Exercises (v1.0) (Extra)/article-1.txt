@@ -1,0 +1,34 @@
+SINGAPORE - Citizens can now scan their fingerprints or faces to log into hundreds of e-government services, removing the hassle of remembering passwords.
+This is possible with the launch of SingPass Mobile on Monday (Oct 22), an app developed by GovTech, the agency behind public sector tech transformations in Singapore.
+"The new SingPass Mobile app will offer a more convenient log-in option, as users no longer need to enter their passwords to log in," said GovTech's chief executive, Mr Kok Ping Soon, in a statement on Monday.
+The current password system is open to security risks and abuse when people set easy-to-guess passwords or share them freely with friends. But when users set difficult passwords, they forget them and often ask for their passwords to be reset.
+GovTech said it receives 150,000 requests from SingPass users to reset their passwords every month.
+There are 3.3 million SingPass users today. They can still log in using passwords, as there will be a transition period for people to migrate to biometric authentication.
+ADVERTISING
+The new SingPass Mobile app is available on both the Google Play Store and Apple App Store. Its fingerprint scanning feature works with all devices, but facial scanning works only on Apple iOS devices.
+During the initial one-time set-up on the app, users need to enter their existing SingPass username and password, and then a one-time password delivered via SMS or their OneKey security token.
+The SingPass Mobile app will allow people to access e-government services more securely, and without the need for physical tokens and SMS one-time passwords (OTPs), said Dr Vivian Balakrishnan, Minister-in-charge of the Smart Nation Initiative
+Related Story
+National digital identity system to be rolled out in second half of 2018
+Related Story
+Biometric tech, paperless registration, on-demand bus services and more in Singapore’s brave new world
+Several users experienced timeout issues when trying to set up their SingPass Mobile account. Users who complained on Facebook said they kept encountering an error message citing the error code 121.
+If set-up is successful, users will be prompted to create a permanent six-digit PIN which they need to remember. The PIN will be required if fingerprint or facial scanning fails.
+As an added security function, the app locks itself down when it detects the presence of malicious software on the mobile device.
+SingPass Mobile will pave the way for the secure digital signing of all sorts of confidential business and legal documents. Works are in progress on this front.
+GovTech’s subsidiary Assurity Trusted Solutions has been appointed the central authority – also called National Certificate Authority – to issue digital certificates to the rightful SingPass Mobile user. Assurity is also the issuer of the OneKey security token.
+When giving updates on Singapore's Smart Nation plans on Oct 10, Minister-in-charge of the Smart Nation Initiative Vivian Balakrishnan said that biometric identification makes systems safer in the light of June's SingHealth cyber attack.
+Biometric scanning is a more secure mechanism than passwords, which can be manipulated easily.
+Introducing SingPass Mobile. Say goodbye to passwords and tokens!
+According to evidence that emerged during the recent public hearing by the Committee of Inquiry looking into the SingHealth attack, hackers got a foot in the door via phishing.
+It is a common trap that ensnares many Internet users when they unknowingly give away confidential data.
+But credentials stolen in phishing attacks will be useless when authentication can be done only via biometrics.
+HOW SINGPASS MOBILE WORKS
+1. Download the SingPass Mobile app from the Google Play Store or Apple App Store.
+2. A one-time set-up on the app requires users to enter their existing SingPass username and password, and then a one-time password delivered via SMS or their OneKey security token.
+3. Users will be prompted to create a permanent six-digit PIN which they need to remember. The PIN will be required if fingerprint or facial scanning fails.
+4. SingPass Mobile’s fingerprint scanning feature works with all devices, but facial scanning works only on Apple iOS devices.
+5. For logging in on computers, look for a QR code on the home page of the e-service. Use the SingPass Mobile app to scan the QR code. Verify your identity with fingerprint or facial scanning. Logging in is then done.
+6. When logging into app-based services, look for a QR code on the e-service’s home page. Tap the QR code to launch the SingPass Mobile app automatically. Verify your identity with fingerprint or facial scanning. Logging in is then done.
+On Android devices, users will be brought back to the e-service automatically. Users of Apple devices need to manually go back to the e-service app.
+7. GovTech’s subsidiary Assurity Trusted Solutions is the National Certificate Authority to issue digital certificates to the rightful SingPass Mobile user. Assurity - also the issuer of the OneKey security token - acts like a trusted electronic notary telling everyone who the valid users are and what their digital signatures look like to secure e-transactions.
