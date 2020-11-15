@@ -1,0 +1,10 @@
+A,12,Wendy Li
+B,19,Ng Yin Hui
+A,13,Chua Lee Hong
+B,20,Eric Wong
+A,17,Peter Liu
+A,1,Michelle Lee
+C,9,Jason Ong
+C,11,George Tan
+B,21,Lindy Chan
+A,15,Louis Ng
