@@ -37,11 +37,3 @@ def process_numbers(input_filename, output_filename):
 
         output_file.write('Total number of groups: ' + str(total_groups) + '\n')
         output_file.write('Maximum average: ' + (str(max_avg) if max_avg != 0 else 'N/A'))
-
-
-def is_digit(n):
-    try:
-        int(n)
-        return True
-    except ValueError:
-        return False
