@@ -1,9 +1,38 @@
-# Name:
-# Email ID:
+# Name: Nicholas Chen Han Wei
+# Email ID: hwchen.2020
 def get_daily_spending(filename, start_day, end_day, month, year):
+    # Build the transaction data first into a date traceable dictionary.
+    transactions = {}
+    with open(filename) as input_file:
+        for line in input_file:
+            cols = line.rstrip().split('|')
+
+            # Store the dd/mm/yyyy as a tuple for easy key traversal
+            date = cols[0].split('/')
+            date_tup = (int(date[0]), int(date[1]), int(date[2]))
+
+            # Store the data
+            if date_tup in transactions:
+                transactions[date_tup].append((int(cols[1]), cols[2]))
+            else:
+                transactions[date_tup] = [(int(cols[1]), cols[2])]
+
+    # Build the tuples we need.
+    date_tuples_to_track = []
+    for i in range(start_day, end_day + 1):
+        date_tuples_to_track.append((i, month, year))
+
+    res = []
+    # Track and store the results
+    for date_tuple in date_tuples_to_track:
+        cur_date_total = 0
+        if date_tuple in transactions.keys():
+            for tx in transactions[date_tuple]:
+                cur_date_total += tx[0]
+        res.append(cur_date_total)
 
     # Write your code here.
-    return None
+    return res
 
 # DO NOT MODIFY THE CODE BELOW!
 if __name__ == "__main__":
