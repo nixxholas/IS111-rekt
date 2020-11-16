@@ -1,0 +1,8 @@
+04/05/2020|100|apple
+3/10/2020|3450|phone bill
+4/5/2020|150|orange
+03/10/2020|8050|birthday gift
+4/10/2020|1520|meal
+04/10/2020|30000|holiday air ticket
+5/10/2020|100|pear
+3/10/2020|2000|EZ-link card
