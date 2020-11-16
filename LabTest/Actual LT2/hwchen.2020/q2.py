@@ -1,9 +1,19 @@
-# Name:
-# Email ID:
-def get_hi_lo(products):
+# Name: Nicholas Chen Han Wei
+# Email ID: hwchen.2020
+import sys
 
-    # Write your code here.
-    return None
+def get_hi_lo(products):
+    highest = (None, -sys.maxsize)
+    lowest = (None, sys.maxsize)
+
+    if len(products) > 0 or products is not None:
+        for product in products:
+            if highest[1] < product[1]:
+                highest = product
+            if lowest[1] > product[1]:
+                lowest = product
+
+    return highest[0], lowest[0]
 
 # DO NOT MODIFY THE CODE BELOW!
 if __name__ == "__main__":
