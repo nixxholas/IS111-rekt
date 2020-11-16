@@ -1,9 +1,33 @@
-# Name:
-# Email ID:    
+# Name: Nicholas Chen Han Wei
+# Email ID: hwchen.2020
 def calculate_term_gpa(term_grades, mapping):
-    
+    grades = []
+    points = 0
+
+    # Convert first
+    current_grade = ''
+    for c in term_grades:
+        if current_grade == '':
+            current_grade += c
+        elif current_grade != '' and not c.isalpha():
+            current_grade += c
+            grades.append(current_grade)
+            current_grade = ''
+        elif current_grade != '' and c.isalpha():
+            grades.append(current_grade)
+            current_grade = c
+
+    if current_grade != '':
+        grades.append(current_grade)
+
+    for grade in grades:
+        if grade in mapping:
+            points += mapping[grade]
+        else:
+            print('gg')
+
     # Write your code here.
-    return None
+    return None if term_grades is None or len(term_grades) == 0 or points <= 0 or len(grades) == 0 else points/len(grades)
 
 # DO NOT MODIFY THE CODE BELOW!
 if __name__ == "__main__":
