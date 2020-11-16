@@ -1,9 +1,19 @@
 # Name: Nicholas Chen Han Wei
 # Email ID: hwchen.2020
 def get_all_tank_sizes(tanks):
-    
+    sizes = []
+    for tank in tanks:
+        volume = int((tank[0] * tank[1] * tank[2])/231)
+
+        if volume < 20:
+            sizes.append('S')
+        elif 20 <= volume < 50:
+            sizes.append('M')
+        elif volume >= 50:
+            sizes.append('L')
+
     # Write your code here.
-    return None
+    return sizes
 
 # DO NOT MODIFY THE CODE BELOW!
 if __name__ == "__main__":
